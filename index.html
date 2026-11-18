@@ -1,110 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUAL BELI SPORT</title>
+    <title>Jual Beli Sepatu Sport</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="logo">JUAL BELI <span>SPORT</span></div>
+<header>
+    <h2>SPORT<span>ZONE</span></h2>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#produk">Produk</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+</header>
 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#produk">Produk</a>
-            <a href="#tentang">Tentang</a>
-            <a href="#kontak">Kontak</a>
-        </nav>
-    </header>
+<section class="hero" id="home">
+    <h1>JUAL BELI SEPATU SPORT</h1>
+    <p>Temukan Sepatu Olahraga Favoritmu!</p>
+    <a href="#produk" class="btn">Belanja Sekarang</a>
+</section>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>SELAMAT DATANG DI<br>
-            <span>JUAL BELI SPORT</span></h1>
-            <p>Temukan perlengkapan olahraga terbaik
-            dengan harga terjangkau dan kualitas terbaik.</p>
-            <a href="#produk" class="btn">BELANJA SEKARANG</a>
+<section class="produk" id="produk">
+    <h2>Produk Kami</h2>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://placehold.co/300x200?text=Running+Shoes" alt="Sepatu lari">
+            <h3>Sepatu Running</h3>
+            <p>Rp250.000</p>
+            <a href="#kontak">Beli Sekarang</a>
         </div>
-    </section>
 
-    <section class="produk" id="produk">
-        <h2>PRODUK KAMI</h2>
-        <p class="subjudul">Pilihan perlengkapan olahraga terbaik</p>
-
-        <div class="produk-container">
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
-                alt="Sepatu olahraga">
-                <h3>Sepatu Sport</h3>
-                <p>Sepatu olahraga nyaman dan berkualitas.</p>
-                <h4>Rp250.000</h4>
-                <button onclick="pesan('Sepatu Sport')">Beli Sekarang</button>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=500"
-                alt="Bola sepak">
-                <h3>Bola Sepak</h3>
-                <p>Bola sepak untuk latihan dan pertandingan.</p>
-                <h4>Rp150.000</h4>
-                <button onclick="pesan('Bola Sepak')">Beli Sekarang</button>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1519861531473-9200262188bf?w=500"
-                alt="Bola basket">
-                <h3>Bola Basket</h3>
-                <p>Bola basket berkualitas untuk bermain.</p>
-                <h4>Rp180.000</h4>
-                <button onclick="pesan('Bola Basket')">Beli Sekarang</button>
-            </div>
-
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=500"
-                alt="Raket badminton">
-                <h3>Raket Badminton</h3>
-                <p>Raket ringan dan nyaman digunakan.</p>
-                <h4>Rp120.000</h4>
-                <button onclick="pesan('Raket Badminton')">Beli Sekarang</button>
-            </div>
-
+        <div class="card">
+            <img src="https://placehold.co/300x200?text=Sport+Shoes" alt="Sepatu sport">
+            <h3>Sepatu Sport</h3>
+            <p>Rp350.000</p>
+            <a href="#kontak">Beli Sekarang</a>
         </div>
-    </section>
 
-    <section class="tentang" id="tentang">
-        <h2>TENTANG KAMI</h2>
-        <p>
-            JUAL BELI SPORT adalah toko perlengkapan olahraga
-            yang menyediakan berbagai macam produk olahraga
-            dengan harga terjangkau dan kualitas terbaik.
-        </p>
-    </section>
+        <div class="card">
+            <img src="https://placehold.co/300x200?text=Football+Shoes" alt="Sepatu bola">
+            <h3>Sepatu Bola</h3>
+            <p>Rp400.000</p>
+            <a href="#kontak">Beli Sekarang</a>
+        </div>
+    </div>
+</section>
 
-    <section class="kontak" id="kontak">
-        <h2>HUBUNGI KAMI</h2>
-        <p>Ingin membeli produk olahraga? Hubungi kami sekarang!</p>
-        <a href="https://wa.me/6281234567890" class="btn">
-            HUBUNGI VIA WHATSAPP
-        </a>
-    </section>
+<section class="tentang" id="tentang">
+    <h2>Tentang SPORTZONE</h2>
+    <p>Kami menyediakan berbagai pilihan sepatu olahraga
+    dengan harga terjangkau dan kualitas terbaik.</p>
+</section>
 
-    <footer>
-        <p>&copy; 2026 JUAL BELI SPORT. All Rights Reserved.</p>
-    </footer>
+<section class="kontak" id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>Ingin membeli sepatu? Hubungi admin kami.</p>
+    <a href="https://wa.me/6281234567890">WhatsApp Admin</a>
+</section>
 
-    <script>
-        function pesan(produk) {
-            const nomor = "6281234567890";
-            const pesan = "Halo, saya ingin membeli " + produk;
-            window.open(
-                "https://wa.me/" + nomor + "?text=" +
-                encodeURIComponent(pesan), "_blank"
-            );
-        }
-    </script>
+<footer>
+    <p>© 2026 SPORTZONE | Jual Beli Sepatu Sport</p>
+</footer>
 
 </body>
 </html>
